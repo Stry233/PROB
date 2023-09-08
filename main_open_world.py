@@ -141,7 +141,7 @@ def get_args_parser():
     
     # logging
     parser.add_argument('--wandb_name', default='', type=str)
-    parser.add_argument('--wandb_project', default='PROB_OWOD', type=str)
+    parser.add_argument('--wandb_project', default='', type=str)
     
     # model hyperparameters
     parser.add_argument('--obj_loss_coef', default=1, type=float)
@@ -166,8 +166,8 @@ def main(args):
         else:
             wandb.init(project=args.wandb_project, entity="marvl")
         wandb.config = args
-    #else:
-    #    wandb=None
+    else:
+        wandb=None
 
     utils.init_distributed_mode(args)
     print("git:\n  {}\n".format(utils.get_sha()))
