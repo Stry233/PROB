@@ -132,7 +132,7 @@ def get_args_parser():
     parser.add_argument('--num_classes', default=81, type=int)
     parser.add_argument('--nc_epoch', default=0, type=int)
     parser.add_argument('--dataset', default='OWDETR', help='defines which dataset is used. Built for: {TOWOD, OWDETR, VOC2007}')
-    parser.add_argument('--data_root', default='./data/OWOD', type=str)
+    parser.add_argument('--data_root', default='/training_data_2/yuetian/OWOD', type=str)
     parser.add_argument('--unk_conf_w', default=1.0, type=float)
 
     ################ PROB OWOD ################
@@ -167,7 +167,7 @@ def main(args):
             wandb.init(project=args.wandb_project, entity="marvl")
         wandb.config = args
     else:
-        wandb=None
+        wandb = None
 
     utils.init_distributed_mode(args)
     print("git:\n  {}\n".format(utils.get_sha()))
