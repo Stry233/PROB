@@ -162,9 +162,9 @@ def get_args_parser():
 def main(args):
     if len(args.wandb_project)>0:
         if len(args.wandb_name)>0:
-            wandb.init(project=args.wandb_project, entity="marvl", group=args.wandb_name)
+            wandb.init(project=args.wandb_project, entity="isl-owod", group=args.wandb_name)
         else:
-            wandb.init(project=args.wandb_project, entity="marvl")
+            wandb.init(project=args.wandb_project, entity="isl-owod")
         wandb.config = args
     else:
         wandb = None
