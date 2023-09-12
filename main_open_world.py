@@ -140,8 +140,8 @@ def get_args_parser():
     parser.add_argument('--model_type', default='prob', type=str)
     
     # logging
-    parser.add_argument('--wandb_name', default='', type=str)
-    parser.add_argument('--wandb_project', default='', type=str)
+    parser.add_argument('--wandb_name', default='prob_original', type=str)
+    parser.add_argument('--wandb_project', default='prob', type=str)
     
     # model hyperparameters
     parser.add_argument('--obj_loss_coef', default=1, type=float)
