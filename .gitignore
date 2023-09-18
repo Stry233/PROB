@@ -130,3 +130,7 @@ dmypy.json
 .pyre/
 
 .idea/
+
+# project files
+exps/
+models/

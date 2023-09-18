@@ -160,6 +160,7 @@ def get_args_parser():
     return parser
 
 def main(args):
+    print("ARGS---: ", args)
     if len(args.wandb_project)>0:
         if len(args.wandb_name)>0:
             wandb.init(project=args.wandb_project, entity="isl-owod", group=args.wandb_name)
