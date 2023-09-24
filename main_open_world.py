@@ -181,6 +181,21 @@ def freeze_param(model):
     for param in model.class_embed.parameters():
         param.requires_grad = True
 
+    return model
+
+
+def check_frozen_layers(model):
+    frozen_layers = []
+    trainable_layers = []
+
+    for name, param in model.named_parameters():
+        if param.requires_grad:
+            trainable_layers.append(name)
+        else:
+            frozen_layers.append(name)
+
+    return frozen_layers, trainable_layers
+
 
 def main(args):
     print("ARGS---: ", args)
@@ -211,8 +226,9 @@ def main(args):
     model, criterion, postprocessors, exemplar_selection = build_model(args, mode = args.model_type)
     model.to(device)
 
-    freeze_param(model)
-
+    model = freeze_param(model)
+    print(check_frozen_layers(model))
+    
     model_without_ddp = model
     print(model_without_ddp)
     n_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
