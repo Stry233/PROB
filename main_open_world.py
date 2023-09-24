@@ -107,6 +107,7 @@ def get_args_parser():
     parser.add_argument('--device', default='cuda',
                         help='device to use for training / testing')
     parser.add_argument('--seed', default=42, type=int)
+    parser.add_argument('--training_seed', default=42, type=int)
     parser.add_argument('--resume', default='', help='resume from checkpoint')
     parser.add_argument('--start_epoch', default=0, type=int, metavar='N',
                         help='start epoch')
@@ -159,6 +160,28 @@ def get_args_parser():
     parser.add_argument('--exemplar_replay_random', default=False, action='store_true', help='make selection random')
     return parser
 
+
+def freeze_param(model):
+    # 1. Freeze Backbone
+    for param in model.backbone.parameters():
+        param.requires_grad = False
+
+    # 2. Freeze Transformer
+    # Assuming class_embed is not a direct part of the transformer (based on the provided snippets)
+    for param in model.transformer.parameters():
+        param.requires_grad = False
+
+    # 3. Freeze Other Layers
+    for param in model.bbox_embed.parameters():
+        param.requires_grad = False
+    for param in model.prob_obj_head.parameters():
+        param.requires_grad = False
+
+    # Unfreeze class_embed
+    for param in model.class_embed.parameters():
+        param.requires_grad = True
+
+
 def main(args):
     print("ARGS---: ", args)
     if len(args.wandb_project)>0:
@@ -188,6 +211,8 @@ def main(args):
     model, criterion, postprocessors, exemplar_selection = build_model(args, mode = args.model_type)
     model.to(device)
 
+    freeze_param(model)
+
     model_without_ddp = model
     print(model_without_ddp)
     n_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
@@ -205,6 +230,12 @@ def main(args):
     else:
         sampler_train = torch.utils.data.RandomSampler(dataset_train)
         sampler_val = torch.utils.data.SequentialSampler(dataset_val)
+
+    # fix the seed for reproducibility
+    seed = args.training_seed + utils.get_rank()
+    torch.manual_seed(seed)
+    np.random.seed(seed)
+    random.seed(seed)
 
     batch_sampler_train = torch.utils.data.BatchSampler(sampler_train, args.batch_size, drop_last=True)
     data_loader_train = DataLoader(dataset_train, batch_sampler=batch_sampler_train,
