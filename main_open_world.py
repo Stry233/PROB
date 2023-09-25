@@ -395,7 +395,7 @@ def main(args):
                     test_stats["metrics"]['epoch']=epoch
                     wandb.log({str(key): val for key, val in test_stats["metrics"].items()})
             elif epoch > args.epochs-6:
-                checkpoint_paths.append(output_dir / f'{args.training_seed}checkpoint{epoch:04}.pth')
+                checkpoint_paths.append(output_dir / f'{args.training_seed}-checkpoint{epoch:04}.pth')
                 
             else:
                  test_stats = {}
