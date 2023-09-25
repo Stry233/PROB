@@ -226,9 +226,9 @@ def main(args):
     model, criterion, postprocessors, exemplar_selection = build_model(args, mode = args.model_type)
     model.to(device)
 
-    model = freeze_param(model)
+    # model = freeze_param(model)
     print(check_frozen_layers(model))
-    
+
     model_without_ddp = model
     print(model_without_ddp)
     n_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
@@ -395,7 +395,7 @@ def main(args):
                     test_stats["metrics"]['epoch']=epoch
                     wandb.log({str(key): val for key, val in test_stats["metrics"].items()})
             elif epoch > args.epochs-6:
-                checkpoint_paths.append(output_dir / f'checkpoint{epoch:04}.pth')
+                checkpoint_paths.append(output_dir / f'{args.training_seed}checkpoint{epoch:04}.pth')
                 
             else:
                  test_stats = {}
