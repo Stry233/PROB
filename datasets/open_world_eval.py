@@ -60,6 +60,7 @@ class OWEvaluator:
                 xmin += 1
                 ymin += 1
                 self.lines.append(f"{image_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f}")
+                print("Line added: ", f"{image_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f}")
                 self.lines_cls.append(cls)
 
     def compute_avg_precision_at_many_recall_level_for_unk(self, precisions, recalls):
