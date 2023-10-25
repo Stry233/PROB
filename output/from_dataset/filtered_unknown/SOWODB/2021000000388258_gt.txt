@@ -1,0 +1,5 @@
+BBOX: tensor([ 48.5296, 220.9205, 717.9047, 761.5063]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([835.0453, 150.6276, 942.1454, 204.1841]), LABEL: aeroplane (ID: 0), PROB: 1.0
+BBOX: tensor([  5.0203, 311.2971, 498.6844, 729.7071]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([451.8281, 445.1883, 530.4797, 527.1967]), LABEL: unknown (ID: 80), PROB: 1.0
+IMAGE_INFO: 800, 1071

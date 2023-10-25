@@ -1,0 +1,2 @@
+BBOX: tensor([   0.0000,   24.9844,  633.3333, 1056.0062]), LABEL: zebra (ID: 15), PROB: 1.0
+IMAGE_INFO: 1066, 800

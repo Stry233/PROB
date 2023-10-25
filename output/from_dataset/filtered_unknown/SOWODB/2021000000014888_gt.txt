@@ -1,0 +1,2 @@
+BBOX: tensor([   0.0000,    5.0000, 1066.0000,  736.6666]), LABEL: cow (ID: 7), PROB: 1.0
+IMAGE_INFO: 800, 1066

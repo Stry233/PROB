@@ -1,0 +1,12 @@
+BBOX: tensor([179.8875, 250.0000, 921.0906, 800.0000]), LABEL: dog (ID: 8), PROB: 1.0
+BBOX: tensor([   0.0000,  146.6666, 1061.0031,  791.6666]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([717.8843,   0.0000, 776.1812, 175.0000]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([536.3312,   3.3333, 579.6375, 160.0000]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([458.0468,   1.6667, 488.0281, 158.3333]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([626.2750,   5.0000, 672.9125, 178.3333]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([746.2000,   5.0000, 796.1688, 171.6666]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([667.9156,  45.0000, 711.2218, 166.6667]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([646.2625,   0.0000, 694.5656, 176.6667]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([621.2782,  23.3333, 642.9312, 150.0000]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([506.3500,   1.6667, 547.9906, 126.6667]), LABEL: unknown (ID: 80), PROB: 1.0
+IMAGE_INFO: 800, 1066

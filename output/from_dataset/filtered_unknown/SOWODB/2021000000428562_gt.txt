@@ -1,0 +1,16 @@
+BBOX: tensor([ 56.6312,  45.0000, 751.1968, 758.3333]), LABEL: sheep (ID: 11), PROB: 1.0
+BBOX: tensor([ 757.8594,  163.3333, 1064.3344,  683.3333]), LABEL: sheep (ID: 11), PROB: 1.0
+BBOX: tensor([ 909.4312,    1.6667, 1067.6658,  171.6666]), LABEL: sheep (ID: 11), PROB: 1.0
+BBOX: tensor([804.4969, 110.0000, 934.4156, 245.0000]), LABEL: sheep (ID: 11), PROB: 1.0
+BBOX: tensor([329.7937,  46.6667, 716.2188, 278.3333]), LABEL: sheep (ID: 11), PROB: 1.0
+BBOX: tensor([ 46.6375,   3.3333, 236.5188, 270.0000]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([526.3375,   0.0000, 587.9657,  88.3333]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([356.4438,   0.0000, 396.4187, 108.3333]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([ 554.6532,  589.9999, 1067.6658,  801.6666]), LABEL: sheep (ID: 11), PROB: 1.0
+BBOX: tensor([651.2593,   0.0000, 706.2250,  48.3333]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([468.0406,   0.0000, 499.6875,  98.3333]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([506.3500,   0.0000, 532.9999,  85.0000]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([219.8625, 190.0000, 344.7844, 266.6667]), LABEL: sheep (ID: 11), PROB: 1.0
+BBOX: tensor([376.4312,   0.0000, 448.0531,  56.6667]), LABEL: sheep (ID: 11), PROB: 1.0
+BBOX: tensor([651.2593,   0.0000, 764.5219, 143.3333]), LABEL: person (ID: 18), PROB: 1.0
+IMAGE_INFO: 800, 1066

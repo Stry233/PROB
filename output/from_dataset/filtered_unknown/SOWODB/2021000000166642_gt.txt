@@ -1,0 +1,2 @@
+BBOX: tensor([ 83.2812,  95.0000, 896.1063, 550.0000]), LABEL: elephant (ID: 13), PROB: 1.0
+IMAGE_INFO: 800, 1066

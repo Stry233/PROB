@@ -1,0 +1,7 @@
+BBOX: tensor([307.2437, 325.9954, 535.8032, 592.0375]), LABEL: boat (ID: 3), PROB: 1.0
+BBOX: tensor([  7.4937,  31.8501, 279.1422, 423.4192]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([  0.0000,   9.3677, 350.3328, 296.0187]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([  1.8734, 264.1686, 226.6859, 595.7845]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([472.1063, 498.3607, 490.8406, 517.0960]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([ 33.7219, 389.6956, 140.5078, 563.9344]), LABEL: unknown (ID: 80), PROB: 1.0
+IMAGE_INFO: 800, 1199

@@ -1,0 +1,21 @@
+BBOX: tensor([294.5219, 427.0397, 316.8906, 447.5524]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([318.7547, 307.6923, 354.1719, 343.1235]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([676.6547, 162.2378, 713.9360, 205.1282]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([484.6562, 119.3473, 756.8093, 525.8741]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([ 39.1453, 177.1562, 229.2797, 427.0396]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([190.1344,  68.9977, 270.2891, 121.2121]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([290.7938,  57.8089, 363.4922, 119.3473]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([376.5406,  52.2145, 454.8313, 121.2121]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([471.6078,  41.0256, 546.1703, 119.3473]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([549.8985,   0.0000, 659.8782, 117.4825]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([283.3375,   3.7296, 374.6766, 111.8881]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([190.1344,   5.5944, 281.4734, 119.3473]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([ 95.0672,  55.9440, 178.9500, 123.0769]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([555.4907,  54.0793, 643.1016, 121.2121]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([ 20.5047,  95.1049,  98.7953, 119.3473]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([244.1922,  24.2424, 287.0656,  95.1049]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([ 20.5047,  72.7273,  96.9312, 113.7529]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([ 93.2031,   0.0000, 195.7266, 115.6177]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([505.1609,  22.3776, 555.4907, 117.4825]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([   1.8640,    0.0000, 1193.0000,  462.4709]), LABEL: person (ID: 18), PROB: 1.0
+IMAGE_INFO: 800, 1193

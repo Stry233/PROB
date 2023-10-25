@@ -1,0 +1,2 @@
+BBOX: tensor([  0.0000,  83.0189, 918.4515, 792.4528]), LABEL: sheep (ID: 11), PROB: 1.0
+IMAGE_INFO: 800, 1207

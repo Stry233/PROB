@@ -1,0 +1,5 @@
+BBOX: tensor([ 286.5671,  673.4160,  637.6119, 1196.3881]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([   0.0000,  651.9240,  802.3881, 1172.5082]), LABEL: boat (ID: 3), PROB: 1.0
+BBOX: tensor([   7.1642,  878.7840,  226.8657, 1189.2240]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([ 109.8508,  759.3840,  530.1493, 1196.3881]), LABEL: unknown (ID: 80), PROB: 1.0
+IMAGE_INFO: 1194, 800

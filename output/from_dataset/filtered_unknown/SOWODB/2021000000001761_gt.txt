@@ -1,0 +1,8 @@
+BBOX: tensor([528.3373, 260.4078, 625.7611, 344.7125]), LABEL: aeroplane (ID: 0), PROB: 1.0
+BBOX: tensor([281.0305,  14.9875, 421.5457, 161.1156]), LABEL: aeroplane (ID: 0), PROB: 1.0
+BBOX: tensor([  20.6089, 1152.1641,   31.8501, 1176.5188]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([   7.4941, 1154.0375,   22.4824, 1174.6454]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([  28.1030, 1150.2908,   41.2178, 1176.5189]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([  67.4473, 1170.8984,   78.6885, 1185.8860]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([  39.3443, 1155.9110,   54.3326, 1176.5187]), LABEL: person (ID: 18), PROB: 1.0
+IMAGE_INFO: 1199, 800

@@ -1,0 +1,4 @@
+BBOX: tensor([ 432.3200,  145.6582, 1093.1200,  609.5239]), LABEL: dog (ID: 8), PROB: 1.0
+BBOX: tensor([   4.4800,   13.4454, 1120.0000,  779.8320]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([  2.2400, 197.1989, 884.7999, 748.4594]), LABEL: unknown (ID: 80), PROB: 1.0
+IMAGE_INFO: 800, 1120

@@ -1,0 +1,3 @@
+BBOX: tensor([   0.0000,    0.0000, 1335.0829,  739.5833]), LABEL: train (ID: 12), PROB: 1.0
+BBOX: tensor([1189.2860,  383.3333, 1335.0829,  716.6667]), LABEL: unknown (ID: 80), PROB: 1.0
+IMAGE_INFO: 750, 1333

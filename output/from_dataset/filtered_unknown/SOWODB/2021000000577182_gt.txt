@@ -1,0 +1,5 @@
+BBOX: tensor([575.1453, 337.2365, 640.7156, 408.4309]), LABEL: bird (ID: 2), PROB: 1.0
+BBOX: tensor([   3.7468,  384.0750, 1200.8734,  790.6323]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([ 932.9718,  339.1101, 1200.8734,  689.4613]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([  0.0000,  13.1147,  86.1781, 318.5012]), LABEL: unknown (ID: 80), PROB: 1.0
+IMAGE_INFO: 800, 1199

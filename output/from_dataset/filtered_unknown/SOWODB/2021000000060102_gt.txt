@@ -1,0 +1,4 @@
+BBOX: tensor([ 79.1469,  37.5000, 310.3391, 272.9167]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([ 404.0657,    0.0000, 1316.3376,  752.0833]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([  0.0000, 218.7500, 637.3406, 741.6666]), LABEL: person (ID: 18), PROB: 1.0
+IMAGE_INFO: 750, 1333

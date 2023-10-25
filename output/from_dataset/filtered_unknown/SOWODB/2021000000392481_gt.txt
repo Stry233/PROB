@@ -1,0 +1,2 @@
+BBOX: tensor([635.0953, 376.5808, 865.5282, 565.8080]), LABEL: aeroplane (ID: 0), PROB: 1.0
+IMAGE_INFO: 800, 1199

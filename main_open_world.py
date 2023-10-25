@@ -226,7 +226,7 @@ def main(args):
     model.to(device)
 
     # model = freeze_param(model)
-    print(check_frozen_layers(model))
+    # print(check_frozen_layers(model))
 
     model_without_ddp = model
     print(model_without_ddp)

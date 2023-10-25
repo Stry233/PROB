@@ -1,0 +1,2 @@
+BBOX: tensor([ 262.2812,   86.1827, 1200.8734,  790.6323]), LABEL: giraffe (ID: 16), PROB: 1.0
+IMAGE_INFO: 800, 1199

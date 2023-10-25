@@ -1,0 +1,7 @@
+BBOX: tensor([ 441.3146, 1039.6156,  704.2253, 1199.1234]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([  20.6573,  996.4547,  559.6244, 1202.8767]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([ 277.9343, 1079.0234,  418.7794, 1202.8766]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([ 214.0845,  979.5656,  328.6385, 1080.9000]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([   0.0000,  958.9234,  110.7981, 1176.6046]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([ 107.0422, 1041.4922,  180.2817, 1079.0234]), LABEL: bicycle (ID: 1), PROB: 1.0
+IMAGE_INFO: 1201, 800

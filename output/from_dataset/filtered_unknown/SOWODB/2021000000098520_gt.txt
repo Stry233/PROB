@@ -1,0 +1,4 @@
+BBOX: tensor([ 141.5781,  215.0000, 1026.0250,  476.6666]), LABEL: aeroplane (ID: 0), PROB: 1.0
+BBOX: tensor([  0.0000, 496.6666,  44.9719, 586.6666]), LABEL: truck (ID: 17), PROB: 1.0
+BBOX: tensor([141.5781, 431.6667, 314.8031, 476.6666]), LABEL: truck (ID: 17), PROB: 1.0
+IMAGE_INFO: 800, 1066

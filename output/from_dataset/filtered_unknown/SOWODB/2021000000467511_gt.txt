@@ -1,0 +1,7 @@
+BBOX: tensor([   7.6923,  301.7344,  771.1538, 1082.0156]), LABEL: motorbike (ID: 10), PROB: 1.0
+BBOX: tensor([ 528.8461,  105.7031,  726.9230, 1030.1250]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([ 42.3077, 134.5312, 340.3846, 753.3750]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([744.2308,  80.7188, 788.4615, 222.9375]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([634.6154,  53.8125, 711.5385, 159.5156]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([750.0000, 286.3594, 801.9231, 349.7812]), LABEL: unknown (ID: 80), PROB: 1.0
+IMAGE_INFO: 1230, 800

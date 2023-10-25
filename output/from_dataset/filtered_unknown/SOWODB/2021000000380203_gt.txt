@@ -1,0 +1,2 @@
+BBOX: tensor([  78.3217,  203.1829,  725.4080, 1068.1079]), LABEL: horse (ID: 9), PROB: 1.0
+IMAGE_INFO: 1193, 800

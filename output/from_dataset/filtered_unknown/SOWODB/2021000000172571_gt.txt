@@ -1,0 +1,9 @@
+BBOX: tensor([ 414.4798,    2.0831, 1335.0829,  168.7313]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([1022.6610,    0.0000, 1303.8407,  431.2022]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([368.6578,   2.0831, 554.0281, 277.0526]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([ 766.4750,  131.2354, 1203.8655,  243.7230]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([ 214.5297,  243.7230, 1095.5594,  739.5014]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([558.1938, 174.9806, 747.7296, 304.1330]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([1020.5781,  114.5706, 1289.2610,  243.7230]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([643.5891,  64.5762, 906.0234, 429.1191]), LABEL: unknown (ID: 80), PROB: 1.0
+IMAGE_INFO: 752, 1333

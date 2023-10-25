@@ -1,0 +1,24 @@
+BBOX: tensor([ 771.2672,    0.0000, 1201.0000,  170.8920]), LABEL: truck (ID: 17), PROB: 1.0
+BBOX: tensor([ 953.2938,    0.0000, 1020.8500,  178.4037]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([611.7593,   0.0000, 756.2548, 138.9671]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([525.4375,   0.0000, 623.0187, 174.6479]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([168.8906,   0.0000, 317.1391, 127.6995]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([  1.8766, 505.1643, 127.6062, 677.9343]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([58.1734, 67.6056, 76.9391, 78.8732]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([26.2719, 71.3615, 46.9141, 80.7512]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([ 0.0000, 52.5822, 86.3219, 80.7512]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([853.8359, 358.6854, 902.6265, 381.2206]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([793.7860, 430.0469, 883.8609, 454.4601]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([491.6594,   0.0000, 555.4625, 133.3333]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([865.0953, 388.7324, 927.0219, 405.6338]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([859.4656, 369.9530, 915.7625, 392.4883]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([863.2188, 394.3662, 942.0344, 420.6573]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([684.9453, 366.1971, 741.2422, 415.0235]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([840.7000, 371.8310, 878.2313, 430.0470]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([887.6141, 424.4131, 912.0093, 441.3145]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([379.0656,   0.0000, 525.4375, 165.2582]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([262.7188,   0.0000, 358.4234,  86.3850]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([ 67.5562,   0.0000, 187.6562, 206.5728]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([  1.8766,  84.5070, 150.1250, 225.3521]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([870.7250, 411.2676, 915.7626, 428.1690]), LABEL: unknown (ID: 80), PROB: 1.0
+IMAGE_INFO: 800, 1201

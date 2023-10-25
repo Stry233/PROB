@@ -1,0 +1,8 @@
+BBOX: tensor([ 318.0000,  264.0000, 1010.0000,  696.0000]), LABEL: train (ID: 12), PROB: 1.0
+BBOX: tensor([844.0000, 382.0000, 877.9999, 540.0000]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([810.0000, 376.0000, 853.9999, 542.0000]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([790., 456., 812., 514.]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([366., 648., 390., 672.]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([366.0000, 610.0000, 388.0000, 648.0000]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([530., 464., 544., 498.]), LABEL: person (ID: 18), PROB: 1.0
+IMAGE_INFO: 800, 1280

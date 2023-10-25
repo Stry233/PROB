@@ -1,0 +1,6 @@
+BBOX: tensor([ 41.6406, 386.6667, 231.5219, 591.6666]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([ 872.7875,   91.6667, 1066.0000,  411.6667]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([  24.9843,   75.0000, 1067.6656,  786.6666]), LABEL: elephant (ID: 13), PROB: 1.0
+BBOX: tensor([  0.0000, 441.6667, 393.0875, 801.6666]), LABEL: elephant (ID: 13), PROB: 1.0
+BBOX: tensor([378.0969, 561.6666, 594.6281, 800.0000]), LABEL: elephant (ID: 13), PROB: 1.0
+IMAGE_INFO: 800, 1066

@@ -1,0 +1,10 @@
+BBOX: tensor([799.9578, 215.4567, 987.3016, 726.9321]), LABEL: horse (ID: 9), PROB: 1.0
+BBOX: tensor([1052.8721,   41.2178, 1199.0001,  320.3747]), LABEL: horse (ID: 9), PROB: 1.0
+BBOX: tensor([500.2078, 331.6159, 751.2485, 517.0959]), LABEL: cow (ID: 7), PROB: 1.0
+BBOX: tensor([ 676.3109,   24.3559, 1052.8719,  556.4403]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([ 74.9375,   0.0000, 116.1531,  50.5855]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([213.5719,   1.8735, 307.2437,  48.7119]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([1140.9235,    0.0000, 1200.8734,   84.3091]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([ 953.5797,    0.0000, 1032.2640,  121.7799]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([50.5828,  0.0000, 97.4188, 48.7119]), LABEL: person (ID: 18), PROB: 1.0
+IMAGE_INFO: 800, 1199

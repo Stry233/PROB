@@ -1,0 +1,11 @@
+BBOX: tensor([ 53.3000, 385.0000, 659.5875, 576.6666]), LABEL: elephant (ID: 13), PROB: 1.0
+BBOX: tensor([278.1594, 308.3333, 794.5031, 481.6667]), LABEL: elephant (ID: 13), PROB: 1.0
+BBOX: tensor([677.9094, 251.6667, 912.7625, 501.6666]), LABEL: elephant (ID: 13), PROB: 1.0
+BBOX: tensor([581.3032, 211.6667, 766.1875, 318.3333]), LABEL: elephant (ID: 13), PROB: 1.0
+BBOX: tensor([379.7625, 176.6667, 592.9625, 313.3333]), LABEL: elephant (ID: 13), PROB: 1.0
+BBOX: tensor([173.2250, 500.0000, 404.7469, 736.6666]), LABEL: elephant (ID: 13), PROB: 1.0
+BBOX: tensor([  0.0000, 535.0000, 336.4562, 801.6666]), LABEL: elephant (ID: 13), PROB: 1.0
+BBOX: tensor([  0.0000, 221.6666, 562.9813, 720.0000]), LABEL: elephant (ID: 13), PROB: 1.0
+BBOX: tensor([  0.0000, 196.6667,  99.9375, 276.6667]), LABEL: elephant (ID: 13), PROB: 1.0
+BBOX: tensor([498.0219, 288.3333, 684.5718, 381.6667]), LABEL: elephant (ID: 13), PROB: 1.0
+IMAGE_INFO: 800, 1066

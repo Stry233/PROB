@@ -1,0 +1,10 @@
+BBOX: tensor([ 909.7200,    0.0000, 1091.6641,  220.3593]), LABEL: bird (ID: 2), PROB: 1.0
+BBOX: tensor([  28.7280,  232.3353, 1096.4520,  625.1497]), LABEL: cat (ID: 6), PROB: 1.0
+BBOX: tensor([801.9900,  50.2994, 845.0820, 114.9701]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([756.5040,  57.4850, 782.8380, 117.3653]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([143.6400,  26.3473, 754.1100, 519.7605]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([ 47.8800,  93.4132, 148.4280, 220.3593]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([842.6880,  45.5090, 873.8100,  98.2036]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([787.6260,  69.4611, 809.1721, 112.5749]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([  0.0000, 495.8084, 110.1240, 570.0599]), LABEL: unknown (ID: 80), PROB: 1.0
+IMAGE_INFO: 800, 1197

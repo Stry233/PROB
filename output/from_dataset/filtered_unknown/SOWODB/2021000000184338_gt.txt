@@ -1,0 +1,2 @@
+BBOX: tensor([  29.9750,   13.1148, 1028.5172,  790.6323]), LABEL: truck (ID: 17), PROB: 1.0
+IMAGE_INFO: 800, 1199

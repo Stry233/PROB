@@ -1,0 +1,7 @@
+BBOX: tensor([446., 146., 886., 642.]), LABEL: horse (ID: 9), PROB: 1.0
+BBOX: tensor([212.0000, 248.0000, 468.0000, 712.0000]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([596.0001, 326.0000, 846.0001, 690.0000]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([820., 382., 988., 642.]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([ 76.0000, 108.0000, 756.0000, 694.0001]), LABEL: truck (ID: 17), PROB: 1.0
+BBOX: tensor([  2.0000, 218.0000, 128.0000, 512.0000]), LABEL: truck (ID: 17), PROB: 1.0
+IMAGE_INFO: 800, 1200
