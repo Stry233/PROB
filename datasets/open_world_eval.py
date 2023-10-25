@@ -17,6 +17,7 @@ class OWEvaluator:
         self.use_07_metric = use_07_metric
         self.ovthresh = ovthresh
         self.voc_gt = voc_gt
+        print("-----VOC_GT-----\n", voc_gt, "\n-----\n")
         self.eps = torch.finfo(torch.float64).eps
         self.num_classes = len(self.voc_gt.CLASS_NAMES)
         self._class_names = self.voc_gt.CLASS_NAMES

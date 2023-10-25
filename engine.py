@@ -121,26 +121,8 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
         outputs = model(samples)
 
         orig_target_sizes = torch.stack([t["orig_size"] for t in targets], dim=0)
-        gt_bboxes = torch.stack([t["boxes"] for t in targets], dim=0)
-
-        print("-----gt-----\n", gt_bboxes, "\n-----\n", orig_target_sizes, "\n-----")
-        print("-----predicted-----\n", outputs, "\n-----\n", orig_target_sizes, "\n-----")
 
         results = postprocessors['bbox'](outputs, orig_target_sizes)
-
-        scaled_gt_bboxes = postprocessors['bbox'](gt_bboxes, orig_target_sizes)
-
-
-        for target in targets:
-            labels = [target[k].cpu() for k in ['labels']]
-            image_id = int(target['image_id'].item())
-            boxes = postprocessors['bbox'](boxes, orig_target_sizes)
-            for (xmin, ymin, xmax, ymax), cls in zip(boxes.tolist(), labels):
-                xmin += 1
-                ymin += 1
-                # Write the line to a file with the name `image_id.txt`
-                with open(f"./output/from_dataset/{image_id}_gt.txt", 'a') as f:
-                    f.write(f"{image_id} 1 {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f} {cls}" + '\n')
  
         if 'segm' in postprocessors.keys():
             target_sizes = torch.stack([t["size"] for t in targets], dim=0)
