@@ -126,11 +126,12 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
             target_sizes = torch.stack([t["size"] for t in targets], dim=0)
             results = postprocessors['segm'](results, outputs, orig_target_sizes, target_sizes)
         res = {target['image_id'].item(): output for target, output in zip(targets, results)}
+        print(res)
         if coco_evaluator is not None:
             coco_evaluator.update(res)
  
         if panoptic_evaluator is not None:
-            res_pano = postprocessors["panoptic"](outputs, target_sizes, orig_target_sizes)
+            res_pano = postprocessors["panoptic"](outputs, target_sizes, orig_target_sizes)ßßß
             for i, target in enumerate(targets):
                 image_id = target["image_id"].item()
                 file_name = f"{image_id:012d}.png"
