@@ -115,13 +115,15 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
  
     for samples, targets in metric_logger.log_every(data_loader, 10, header):
         print("-----sample-----\n", samples, "\n---targets---\n", targets, "\n-----")
+        gt = postprocessors['bbox'](targets["boxes"], orig_target_sizes)
+
         samples = samples.to(device)
         targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
         outputs = model(samples)
 
         orig_target_sizes = torch.stack([t["orig_size"] for t in targets], dim=0)
         results = postprocessors['bbox'](outputs, orig_target_sizes)
-        gt = postprocessors['bbox'](targets["boxes"], orig_target_sizes)
+
         print("-----gt-----\n", gt, "\n-----\n", targets["boxes"], "\n-----")
 
         for target in targets:
