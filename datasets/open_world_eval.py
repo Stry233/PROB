@@ -49,18 +49,21 @@ class OWEvaluator:
             print(self.known_classes)
             print(self.voc_gt.CLASS_NAMES)
 
-
     def update(self, predictions):
         for img_id, pred in predictions.items():
             pred_boxes, pred_labels, pred_scores = [pred[k].cpu() for k in ['boxes', 'labels', 'scores']]
             image_id = self.voc_gt.convert_image_id(int(img_id), to_string=True)
             self.img_ids.append(img_id)
             classes = pred_labels.tolist()
-            for (xmin, ymin, xmax, ymax), cls, score in zip(pred_boxes.tolist(), classes , pred_scores.tolist()):
+            for (xmin, ymin, xmax, ymax), cls, score in zip(pred_boxes.tolist(), classes, pred_scores.tolist()):
                 xmin += 1
                 ymin += 1
                 self.lines.append(f"{image_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f}")
-                print("Line added: ", f"{image_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f} {cls}")
+
+                # Write the line to a file with the name `image_id.txt`
+                with open(f"./output/from_dataset/{image_id}_pred.txt", 'a') as f:
+                    f.write(f"{image_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f} {cls}" + '\n')
+
                 self.lines_cls.append(cls)
 
     def compute_avg_precision_at_many_recall_level_for_unk(self, precisions, recalls):

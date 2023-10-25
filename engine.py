@@ -119,6 +119,16 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
         targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
         outputs = model(samples)
 
+        for sample, target in zip(samples, targets):
+            boxes, labels = [target[k].cpu() for k in ['boxes', 'labels']]
+            image_id = coco_evaluator.voc_gt.convert_image_id(int(target['image_id'].item()), to_string=True)
+            for (xmin, ymin, xmax, ymax), cls in zip(boxes.tolist(), labels):
+                xmin += 1
+                ymin += 1
+                # Write the line to a file with the name `image_id.txt`
+                with open(f"./output/from_dataset/{image_id}_gt.txt", 'a') as f:
+                    f.write(f"{image_id} 1 {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f} {cls}" + '\n')
+
         orig_target_sizes = torch.stack([t["orig_size"] for t in targets], dim=0)
         results = postprocessors['bbox'](outputs, orig_target_sizes)
  
