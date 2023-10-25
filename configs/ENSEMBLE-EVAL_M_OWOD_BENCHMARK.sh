@@ -14,7 +14,7 @@ python -u main_open_world.py \
     --output_dir "${EXP_DIR}/eval" --dataset TOWOD --PREV_INTRODUCED_CLS 0 --CUR_INTRODUCED_CLS 20 \
     --train_set "owod_t1_train" --test_set 'owod_all_task_test' --epochs 191 --lr_drop 35\
     --model_type 'prob' --obj_loss_coef 8e-4 --obj_temp 1.3\
-    --pretrain "${EXP_DIR}/t1/ckpt/24-checkpoint0040.pth" --eval --wandb_project ""\
+    --pretrain "${EXP_DIR}/t1.pth" --eval --wandb_project ""\
     ${PY_ARGS}
 
 
