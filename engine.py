@@ -131,7 +131,7 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
             coco_evaluator.update(res)
  
         if panoptic_evaluator is not None:
-            res_pano = postprocessors["panoptic"](outputs, target_sizes, orig_target_sizes)ßßß
+            res_pano = postprocessors["panoptic"](outputs, target_sizes, orig_target_sizes)
             for i, target in enumerate(targets):
                 image_id = target["image_id"].item()
                 file_name = f"{image_id:012d}.png"
