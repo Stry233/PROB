@@ -51,6 +51,7 @@ class OWEvaluator:
 
     def update(self, predictions):
         for img_id, pred in predictions.items():
+            ori_img_id = img_id
             pred_boxes, pred_labels, pred_scores = [pred[k].cpu() for k in ['boxes', 'labels', 'scores']]
             image_id = self.voc_gt.convert_image_id(int(img_id), to_string=True)
             self.img_ids.append(img_id)
@@ -61,8 +62,8 @@ class OWEvaluator:
                 self.lines.append(f"{image_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f}")
 
                 # Write the line to a file with the name `image_id.txt`
-                with open(f"./output/from_dataset/{image_id}_pred.txt", 'a') as f:
-                    f.write(f"{image_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f} {cls}" + '\n')
+                with open(f"./output/from_dataset/{ori_img_id}_pred.txt", 'a') as f:
+                    f.write(f"{ori_img_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f} {cls}" + '\n')
 
                 self.lines_cls.append(cls)
 
