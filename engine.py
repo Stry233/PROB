@@ -119,7 +119,7 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
         targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
         outputs = model(samples)
 
-        for sample, target in zip(samples, targets):
+        for target in targets:
             boxes, labels = [target[k].cpu() for k in ['boxes', 'labels']]
             image_id = coco_evaluator.voc_gt.convert_image_id(int(target['image_id'].item()), to_string=True)
             for (xmin, ymin, xmax, ymax), cls in zip(boxes.tolist(), labels):
