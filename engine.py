@@ -142,7 +142,7 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
                 res_pano[i]["file_name"] = file_name
  
             panoptic_evaluator.update(res_pano)
- 
+    print("after updating:", len(coco_evaluator.lines))
     # gather the stats from all processes
     metric_logger.synchronize_between_processes()
     # print("Averaged stats:", metric_logger)
@@ -150,10 +150,13 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
         coco_evaluator.synchronize_between_processes()
     if panoptic_evaluator is not None:
         panoptic_evaluator.synchronize_between_processes()
+
+    print("after sync:", len(coco_evaluator.lines))
  
     # accumulate predictions from all images
     if coco_evaluator is not None:
         coco_evaluator.accumulate()
+        print("after acc:", len(coco_evaluator.lines))
         res = coco_evaluator.summarize()
     panoptic_res = None
     if panoptic_evaluator is not None:
