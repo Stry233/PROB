@@ -61,7 +61,6 @@ class OWEvaluator:
                 xmin += 1
                 ymin += 1
                 self.lines.append(f"{image_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f}")
-                print(f"Write: {ori_img_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f} {cls}")
                 # Write the line to a file with the name `image_id.txt`
                 with open(f"./output/from_dataset/filtered_unknown/SOWODB/{ori_img_id}_pred.txt", 'a') as f:
                     f.write(f"{ori_img_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f} {cls}" + '\n')
