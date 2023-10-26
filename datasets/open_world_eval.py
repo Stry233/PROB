@@ -63,7 +63,7 @@ class OWEvaluator:
                 self.lines.append(f"{image_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f}")
 
                 # Write the line to a file with the name `image_id.txt`
-                with open(f"./output/from_dataset/{ori_img_id}_pred.txt", 'a') as f:
+                with open(f"./output/from_dataset/filtered_unknown/SOWODB/{ori_img_id}_pred.txt", 'a') as f:
                     f.write(f"{ori_img_id} {score:.3f} {xmin:.1f} {ymin:.1f} {xmax:.1f} {ymax:.1f} {cls}" + '\n')
 
                 self.lines_cls.append(cls)
