@@ -114,7 +114,7 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
         )
  
     for samples, targets in metric_logger.log_every(data_loader, 10, header):
-        print("-----sample-----\n", samples, "\n---targets---\n", targets, "\n-----")
+        # print("-----sample-----\n", samples, "\n---targets---\n", targets, "\n-----")
 
         samples = samples.to(device)
         targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
