@@ -507,7 +507,7 @@ class SetCriterion(nn.Module):
 
 class PostProcess(nn.Module):
     """ This module converts the model's output into the format expected by the coco api"""
-    def __init__(self, invalid_cls_logits, temperature=1, pred_per_im=20):
+    def __init__(self, invalid_cls_logits, temperature=1, pred_per_im=100):
         super().__init__()
         self.temperature=temperature
         self.invalid_cls_logits=invalid_cls_logits
