@@ -321,7 +321,7 @@ def voc_eval(detpath,
     [use_07_metric]: Whether to use VOC07's 11 point AP computation
         (default False)
     """
-
+    print(len(detpath), len(annopath), len(imagesetfile), classname) 
     def iou(BBGT, bb):
         ixmin = np.maximum(BBGT[:, 0], bb[0])
         iymin = np.maximum(BBGT[:, 1], bb[1])
