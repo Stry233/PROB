@@ -1,0 +1,6 @@
+BBOX: tensor([ 802.8312,  136.6666, 1064.3342,  531.6666]), LABEL: car (ID: 5), PROB: 1.0
+BBOX: tensor([ 14.9906, 338.3333,  78.2844, 405.0000]), LABEL: car (ID: 5), PROB: 1.0
+BBOX: tensor([ 66.6250,   1.6667, 816.1562, 623.3333]), LABEL: bus (ID: 4), PROB: 1.0
+BBOX: tensor([  0.0000, 318.3333,  53.3000, 505.0000]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([  0.0000, 390.0000,  41.6406, 505.0000]), LABEL: motorbike (ID: 10), PROB: 1.0
+IMAGE_INFO: 800, 1066
