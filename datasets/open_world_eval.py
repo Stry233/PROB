@@ -140,7 +140,8 @@ class OWEvaluator:
             self.rec, self.prec, self.AP[class_label_ind, ovthresh_ind], self.unk_det_as_known, \
                 self.num_unk, self.tp_plus_fp_closed_set, self.fp_open_set = voc_eval(lines_by_class, \
                 self.voc_gt.annotations, self.voc_gt.image_set, class_label, ovthresh=ovthresh / 100.0, use_07_metric=self.use_07_metric, known_classes=self.known_classes) #[-1]
-            
+
+            print(f"Get AP: {self.AP[class_label_ind, ovthresh_ind]}")
             self.AP[class_label_ind, ovthresh_ind] = self.AP[class_label_ind, ovthresh_ind] * 100
             self.all_recs[ovthresh].append(self.rec)
             self.all_precs[ovthresh].append(self.prec)
@@ -321,7 +322,17 @@ def voc_eval(detpath,
     [use_07_metric]: Whether to use VOC07's 11 point AP computation
         (default False)
     """
-    print(len(detpath), len(annopath), len(imagesetfile), classname) 
+    # print(len(detpath), len(annopath), len(imagesetfile), classname, ovthresh) 
+    # with open(f'eval_frame/{classname}.txt', 'w') as f:
+    #     f.write(f"detpath: {detpath}\n")
+    #     f.write(f"annopath: {annopath}\n")
+    #     f.write(f"imagesetfile: {imagesetfile}\n")
+    #     f.write(f"classname: {classname}\n")
+    #     f.write(f"ovthresh: {ovthresh}\n")
+    #     f.write(f"use_07_metric: {use_07_metric}\n")
+    #     if known_classes:
+    #         f.write(f"known_classes: {known_classes}\n")
+        
     def iou(BBGT, bb):
         ixmin = np.maximum(BBGT[:, 0], bb[0])
         iymin = np.maximum(BBGT[:, 1], bb[1])

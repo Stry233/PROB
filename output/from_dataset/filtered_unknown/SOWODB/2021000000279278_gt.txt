@@ -1,0 +1,24 @@
+BBOX: tensor([ 943.2156,  292.7739, 1079.2922,  447.5524]), LABEL: dog (ID: 8), PROB: 1.0
+BBOX: tensor([292.6578,   1.8648, 540.5781, 542.6573]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([641.2375,   0.0000, 896.6141, 600.4662]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([438.0547,   1.8648, 587.1797, 458.7413]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([260.9688,  22.3776, 346.7157, 380.4196]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([1051.3312,   31.7017, 1194.8640,  788.8112]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([863.0610, 108.1585, 978.6328, 283.4499]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([201.3188,  65.2681, 277.7453, 289.0443]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([  1.8641, 151.0490,  87.6109, 300.2331]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([  0.0000, 165.9674,  31.6891, 318.8811]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([  0.0000,  18.6480, 201.3188, 188.3450]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([488.3844, 322.6107, 702.7516, 542.6573]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([ 989.8172,    0.0000, 1096.0687,  121.2121]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([848.1484, 119.3473, 896.6140, 231.2354]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([525.6656, 104.4289, 577.8594, 236.8298]), LABEL: unknown (ID: 80), PROB: 1.0
+BBOX: tensor([ 900.3422,   42.8904, 1125.8938,  272.2611]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([536.8501,   0.0000, 652.4219, 341.2588]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([622.5969,  89.5105, 682.2469, 294.6387]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([ 935.7594,   46.6201, 1192.9999,  279.7203]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([  1.8641, 481.1189, 521.9375, 788.8113]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([216.2313,  74.5921, 277.7453, 177.1562]), LABEL: bicycle (ID: 1), PROB: 1.0
+BBOX: tensor([167.7656,   0.0000, 255.3766, 151.0490]), LABEL: person (ID: 18), PROB: 1.0
+BBOX: tensor([ 27.9609,   9.3240, 240.4641, 294.6387]), LABEL: bicycle (ID: 1), PROB: 1.0
+IMAGE_INFO: 800, 1193
